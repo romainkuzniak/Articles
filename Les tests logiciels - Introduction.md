@@ -1,4 +1,4 @@
-# Les tests logiciels - Présentation des tests logiciels
+# Les tests logiciels - Introduction
 
 Cet article est le premier d'une série sur les tests logiciels.
 A travers cette série, nous définirions l'utilité des tests logiciels, les différents types de tests ainsi que la méthodologie permettant de les mettre en place.

@@ -161,6 +161,74 @@ Les tests structurels (boîte blanche) peuvent être effectués à tous les nive
 Après qu'un défaut soit détecté et corrigé, le logiciel doit être re-testé pour s'assurer que le défaut original a été supprimé avec succès. Cela s'appelle la confirmation. Le débogage est une activité de développement, et non une activité de test.
 Les tests de régression sont la répétition des tests d'un programme déjà testé, après une modification, afin de vérifier que des défauts n'ont pas été introduits à la suite du changement. Ces défauts peuvent être dans le logiciel testé, ou dans un autre composant logiciel connexes ou non. Ces tests sont effectués lorsque le logiciel,  ou son environnement,  est modifié.  L'étendue des tests de régression est fondée sur le risque de ne pas trouver des défauts sur un logiciel qui fonctionné correctement précédemment. Les tests doivent être reproductibles.Les tests de régression peuvent être réalisés à tous les niveaux de tests, et comprend les tests fonctionnels, non fonctionnels et structurels.
 
-### Les catégories de tests
+## Les catégories de test
 
-## Autres généralités sur les tests logiciels
+Le but d'une conception de tests est de déterminer les conditions de tests, les cas de test, et les données de test.  
+La distinction classique pour désigner les techniques de conception des tests est la suivante:
+
+- Techniques boîte noire
+- Techniques boîte blanche
+- Techniques basées sur l'expérience 
+
+### Techniques boites noire
+
+#### Définitions
+- **Tests Boîte Noire** : tests, fonctionnels ou non fonctionnels, sans référence aux structures internes du composant ou du système.
+- **Technique de conception de tests boîte noire** : procédure documentée pour élaborer et sélectionner des cas de tests basés sur une analyse des spécifications, soit fonctionnelles soit non-fonctionnelles, d’un composant ou système sans faire référence à ses structures internes.
+
+#### Descriptif
+Les techniques de conception de tests boîte noire (également appelée techniques de conception basées sur les spécifications) sont des façons d'identifier et de sélectionner les conditions de tests, les cas de test, et les données de test fondée sur une analyse de la documentation de base des tests.  
+
+Ces techniques concernent à la fois les tests fonctionnels et non fonctionnels. 
+
+Les tests boîte noire, par définition, n'utilise aucune information concernant la structure interne du composant ou du système à tester.
+
+Il existe des caractéristiques communes aux différentes techniques de conception de tests boites noires :
+
+- Des modèles, formels ou informels, sont utilisés pour la spécification du problème à résoudre
+- Les cas de tests peuvent être dérivés de façon systématique à partir de ces modèles
+
+Parmi les techniques de conception de tests boites noires:
+- Partitionnement par équivalence
+- Analyse des valeurs limites
+- Tests par Table de décision
+- Test d'état-transition
+- Test des cas d'utilisation
+
+### Techniques boite blanche
+#### Définition
+- **Test boîte blanche** : tests basés sur une analyse de la structure interne du composant ou du système
+- **Technique de conception de tests boîte blanche** : procédures documentées utilisées pour élaborer et sélectionner des cas de tests basés sur une analyse de la structure interne d’un composant ou d'un système
+
+#### Descriptif
+
+Les techniques de conception de tests boîte blanche (également appelé techniques de conception structurelle ou techniques de conception basée sur la structure) sont basées sur une analyse de la structure de ce composant ou de ce système. 
+
+Il existe des caractéristiques communes aux différentes techniques de conception de tests boites blanches :
+
+- Les informations sur la façon dont le logiciel est construit sont utilisées pour définir les cas de test (par exemple, le code et les informations de conception détaillées)
+- L'étendue de la couverture du logiciel peut être mesurée pour les cas de tests existants, et des cas de tests peuvent en être dérivés de façon systématique pour augmenter la couverture
+
+Parmi les techniques de conception de tests boites blanches :
+- Tests des instructions et couvertures
+- Test des décisions et couverture
+- Couverture de conditions
+- Couverture de conditions multiples
+
+###Technique basée sur l'expérience
+
+Les tests boîte noire et les tests boîte blanche peuvent également s'appuyer sur l'expérience des développeurs, des testeurs et des utilisateurs afin de déterminer ce qui doit être testé. Certains tests tombent clairement dans une seule catégorie, d'autres ont des éléments des deux catégories.
+
+Il existe des caractéristiques communes aux différentes techniques de conception de tests basées sur l'expérience:
+
+- Les connaissances et l'expérience des personnes sont utilisées pour calculer les cas de test
+- La connaissance des testeurs, des développeurs, des utilisateurs et d'autres intervenants sur le logiciel, son utilisation et son environnement est une source d'information
+- La connaissance des défauts probable et leur répartition est une autre source d'information
+
+### Choix de la technique de test
+
+Le choix des techniques de test à utiliser dépend d'un certain nombre de facteurs, comme le type de système, les normes réglementaires, le client ou les exigences contractuelles, le niveau de risque, le type de risque, l'objectif du test, la documentation disponible, la connaissance des testeurs, le temps et le budget, le cycle de vie du développement cycle, les cas d'utilisation et de l'expérience acquise.
+
+Certaines techniques sont plus adaptées à certaines situations et à certains niveaux de tests, d'autres sont applicables à tous les niveaux.
+
+Lors de la création des cas de test, les testeurs utilisent généralement une combinaison des techniques.

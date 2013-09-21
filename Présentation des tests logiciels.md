@@ -53,130 +53,74 @@ l'assurance qualité (c.-à-d. parallèlement au développement).
 
 ###Combien de tests sont suffisants? 
 
-La granularité des tests devrait tenir compte du niveau de risque, techniques et pour l'entreprise ainsi que des 
+La granularité des tests doit tenir compte du niveau de risque, technique et stratégique, ainsi que des contraintes liées au projet telles que le temps et le budget. 
+Les tests doivent fournir des informations suffisantes pour aider les parties prenantes à prendre des décisions éclairées. 
 
-contraintes du projet telles que le temps et le budget. Les tests doivent fournir des informations suffisantes 
+##Définitions
 
-pour aider les parties prenantes à prendre des décisions éclairées. 
+Deux entités régissent les tests logiciels : l'ISTQB (International  Software  Testing Qualifications  Board) et le CFTL (Comité Français des Tests Logiciels)
 
-1.2.2  Définitions
+###Test [ISTQB]
 
-Deux entités régissent les tests logiciels : l'ISTQB (International  Software  Testing Qualifications  Board) et le 
+Processus consistant en toutes les activités du cycle de vie, statiques et dynamiques, concernant la planification et l’évaluation de produits logiciels et produits liés pour déterminer s’ils satisfont aux exigences, pour démontrer qu’ils sont aptes au objectifs et détecter des anomalies.
 
-CFTL (Comité Français des Tests Logiciels)
+###Test [IEEE-829-2008]
 
-1.2.2.1  Test [ISTQB]
-
-Processus consistant en toutes les activités du cycle de vie, statiques et dynamiques, concernant la planification 
-
-et l’évaluation de produits logiciels et produits liés pour déterminer s’ils satisfont aux exigences, pour 
-
-démontrer qu’ils sont aptes au objectifs et détecter des anomalies.
-
-1.2.2.2  Test [IEEE-829-2008]
-
-Un test est un ensemble de cas à tester (état de l'objet à tester avant exécution du test, actions ou données
-
-en entrée, valeurs ou observations attendues, et état de l'objet après exécution), éventuellement accompagné
-
-d'une procédure d'exécution (séquence d'actions à exécuter). Il est lié à un objectif.
-
+Un test est un ensemble de cas à tester (état de l'objet à tester avant exécution du test, actions ou données en entrée, valeurs ou observations attendues, et état de l'objet après exécution), éventuellement accompagné d'une procédure d'exécution (séquence d'actions à exécuter). Il est lié à un objectif.  
 Un test vise à mettre en évidence des défauts de l'objet testé. Cependant il n'a pas pour objectif :
 
-• de diagnostiquer la cause des erreurs,
+- de diagnostiquer la cause des erreurs
+- de les corriger
+- de prouver la correction de l'objet testé.
 
-• de les corriger,
+### Suite de tests
 
-• de prouver la correction de l'objet testé.
+Un ensemble de plusieurs cas de tests pour un composant ou système sous test, où les post-conditions d’un test sont souvent utilisées comme pré-conditions du test suivant.
 
-1.2.2.3  Suite de tests
+## Principes
 
-Un ensemble de plusieurs cas de tests pour un composant ou système sous test, où les post-conditions d’un
+Un certain nombre de principes de test ont été suggérés pendant les 40 dernières années et offrent des lignes directrices communes pour tous les tests.
 
-test sont souvent utilisées comme pré-conditions du test suivant.
+###Les tests montrent la présence de défauts
 
-1.2.2.4  Classifications des tests
+Les tests peuvent prouver la présence de défauts, mais ne peuvent pas prouver qu'il n'existe pas de défauts.  
+Tester un logiciel réduit la probabilité d'apparition de défauts, mais, même si aucun défaut n'a été trouvé, cela ne constitue pas une preuve d'absence de défauts.
 
-Niveau
+###L'exhaustivité des tests est impossible
 
-Acceptation
+Tout tester (toutes les combinaisons d'entrants et des conditions) n'est pas possible sauf pour les cas triviaux.  
+A la place de tests exhaustifs, l'analyse des risques et des priorités devrait être utilisé pour définir les tests.
 
-Système
+###La précocité des tests
 
-Intégration
+Les activités de test doivent commencer le plus tôt possible dans le cycle de développement et doivent être axés sur des objectifs définis.
 
-Composant
+### Partitionnement des défauts
 
-Fonctionnel Non Fonctionnel Structurel Régression
+L'effort de test doit être porté proportionnellement à la densité de défauts attendu et observé par modules.  
+Un petit nombre de modules contient généralement la plupart des défauts détectés au cours des tests préliminaires ou est responsable de la plupart des pannes de fonctionnement.
 
- Boite noire
+###Le "paradoxe des pesticides"
 
-Boite blanche
+Si les mêmes tests sont répétés maintes et maintes fois, il se peut que le même ensemble de tests ne puisse plus trouver de nouveaux défauts. Pour surmonter ce "paradoxe de pesticides", les cas de test doivent être régulièrement examiné et révisé, et de nouveaux tests doivent être écrits afin de trouver d'autres défauts.
 
-           Basée sur l'expérience
-
-Catégories
-
-Descriptions et Méthodologies des tests logiciels Hélice
-
-Références et ressources documentaires  
-
-40 / 40
-
-1.2.3  Principes des tests
-
-Un certain nombre de principes de test ont été suggérés pendant les 40 dernières années et offrent des lignes 
-
-directrices communes pour tous les tests.
-
-1.2.3.1  Les tests montrent la présence de défauts
-
-Les tests peuvent prouver la présence de défauts, mais ne peuvent pas prouver qu'il n'existe pas de défauts. 
-
-Tester un logiciel réduit la probabilité d'apparition de défauts, mais, même si aucun défaut n'a été trouvé, cela 
-
-ne constitue pas une preuve d'absence de défauts.
-
-1.2.3.2  L'exhaustivité des tests est impossible
-
-Tout tester (toutes les combinaisons d'entrants et des conditions) n'est pas possible sauf pour les cas triviaux.
-
-Au lieu de tests exhaustifs, l'analyse des risques et des priorités devrait être utilisé pour définir les tests.
-
-1.2.3.3  La précocité des tests
-
-Pour trouver des défauts précocement, les activités de test doivent commencer plus tôt possible dans le cycle
-
-de développement et doivent être axés sur des objectifs définis.
-
-1.2.3.4  Partitionnement des défauts
-
-L'effort de test doit être porté proportionnellement à la densité de défauts attendu et observé par modules. 
-
-Un petit nombre de modules contient généralement la plupart des défauts détectés au cours des tests 
-
-préliminaires ou est responsable de la plupart des pannes de fonctionnement.
-
-1.2.3.5  Le "paradoxe des pesticides"
-
-Si les mêmes tests sont répétés maintes et maintes fois, il se peut que le même ensemble de tests ne 
-
-puisse plus trouver de nouveaux défauts. Pour surmonter ce "paradoxe de pesticides", les cas de test doivent
-
-être régulièrement examiné et révisé, et de nouveaux tests doivent être écrits afin de trouver d'autres défauts.
-
-1.2.3.6  Les tests sont dépendants du contexte 
+###Les tests sont dépendants du contexte 
 
 Les tests doivent être adaptés à leurs contextes. 
 
-1.2.3.7  L'illusion de l'absence d'erreurs
+### L'illusion de l'absence d'erreurs
 
-Trouver et corriger des défauts n'apporte rien si le logiciel développé est inutilisable ou ne remplit pas les 
+Trouver et corriger des défauts n'apporte rien si le logiciel développé est inutilisable ou ne remplit pas les besoins et les attentes des utilisateurs.
 
-besoins et les attentes des utilisateurs.
+## Classifications des tests logiciels
+### Les niveaux de test
+#### Tests de composants (tests unitaires)
+#### Tests d'intégration
+#### Tests système
+#### Tests d'acceptation
 
-Descriptions et Méthodologies des tests logiciels Hélice
+### Les types de tests
 
-Références et ressources documentaires  
+### Les catégories de tests
 
-40 / 40
+## Autres généralités sur les tests logiciels

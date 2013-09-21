@@ -1,4 +1,4 @@
-# Classifications des tests logiciels
+# Les tests logiciels - Classifications
 TODO Graphique 3 dimensions
 ## Les niveaux de test
 Il existe plusieurs niveaux de tests :

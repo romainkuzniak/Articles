@@ -87,41 +87,29 @@ Les tests système prennent en compte le comportement de l'intégralité d'un sy
 - les rapports
 - les données de configuration
 
-Les tests d'acceptation sont souvent de la responsabilité des clients ou des utilisateurs d'un système, mais d'autres parties prenantes peuvent être également impliquées.  
-L'objectif des tests d'acceptation est d'établir la confiance dans le système, les parties du système ou des caractéristiques non-fonctionnelles du système. Déceler les défauts n'est pas le principal objectif des des tests d'acceptation.  Les tests d'acceptation peuvent évaluer la préparation du système pour son déploiement et son utilisation, même si ce n'est pas nécessairement le niveau final des tests.
+Les tests d'acceptation sont souvent de la responsabilité des clients ou des utilisateurs d'un système, mais d'autres parties prenantes peuvent également être impliquées.  
+L'objectif des tests d'acceptation est d'établir la confiance dans le système, les parties du système ou des caractéristiques non-fonctionnelles du système.  
+Déceler les défauts n'est pas le principal objectif des des tests d'acceptation.  Les tests d'acceptation peuvent évaluer la préparation du système pour son déploiement et son utilisation, même si ce n'est pas nécessairement le niveau final des tests.
 Par exemple, un système de test d'intégration à grande échelle peut venir après les tests d'acceptation d'un système.
 
 Les tests d'acceptation typiques sont les suivants:
 
-- Les tests d'acceptation utilisateur:
-
+- Les tests d'acceptation utilisateur:  
 En règle générale vérifie l'aptitude à l'utilisation du système par les utilisateurs métier.
 
-• Les tests d'acceptation opérationnels:
-
+- Les tests d'acceptation opérationnels:  
 L'acceptation du système par les administrateurs système, y compris:
+  - Contrôle de sauvegarde / restauration
+  - Reprise après sinistre
+  - Gestion des utilisateurs
+  - Les tâches de maintenance
+  - Chargement de données et les tâches de migration
+  - Des contrôles périodiques des failles de sécurité
 
-• Contrôle de sauvegarde / restauration
-
-• Reprise après sinistre
-
-• Gestion des utilisateurs
-
-• Les tâches de maintenance
-
-• Chargement de données et les tâches de migration
-
-• Des contrôles périodiques des failles de sécurité
-
-• Les tests d'acceptation contractuels et réglementaires:
-
-Les tests d'acceptation contractuels sont effectués par rapport aux critères d'acceptation du contrat. 
-
-Les critères d'acceptation doivent être définis par les parties prenantes du contrat.
-
-Les tests d'acceptation réglementaires sont effectués pour vérifier le respect des règlementations, 
-
-comme le cadre gouvernemental, juridique ou de sécurité.
+- Les tests d'acceptation contractuels et réglementaires:  
+Les tests d'acceptation contractuels sont effectués par rapport aux critères d'acceptation du contrat.  
+Les critères d'acceptation doivent être définis par les parties prenantes du contrat.  
+Les tests d'acceptation réglementaires sont effectués pour vérifier le respect des règlementations, comme le cadre gouvernemental, juridique ou de sécurité.
 
 ### Les types de tests
 

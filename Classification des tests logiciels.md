@@ -70,7 +70,7 @@ Les tests système prennent en compte le comportement de l'intégralité d'un sy
 ### Tests d'acceptation
 #### Définitions
 - **Critère d’acceptation** : le critère de sortie que doit satisfaire un composant ou un système de façon à être accepté par un utilisateur, client ou une autre entité autorisée [IEEE 610]
-- **Test d’acceptation** : test formel en rapport avec les besoins, exigences et processus métier, conduit pour déterminer si un système satisfait ou non aux critères d’acceptation et permettre aux utilisateurs, clients ou autres entités autorisées de déterminer l’acceptation ou non du système [d’après IEEE 610]
+- **Test d’acceptation** : test formel en rapport avec les besoins, exigences et processus métier, conduit pour déterminer si un système satisfait ou non aux critères d’acceptation et permettre aux utilisateurs, clients ou autres entités autorisées de déterminer l’acceptation ou non du système [IEEE 610]
 
 #### Eléments servant de base de test
 - les besoins des utilisateurs
@@ -111,7 +111,55 @@ Les tests d'acceptation contractuels sont effectués par rapport aux critères d
 Les critères d'acceptation doivent être définis par les parties prenantes du contrat.  
 Les tests d'acceptation réglementaires sont effectués pour vérifier le respect des règlementations, comme le cadre gouvernemental, juridique ou de sécurité.
 
-### Les types de tests
+## Les types de tests
+### Tester les fonctionnalités (Tests fonctionnels)
+####Définitions
+- **Fonctionnalité** : la capacité d’un produit logiciel à fournir des fonctions qui répondent à des besoins explicites ou implicites quand le logiciel est utilisé sous des conditions spécifiées [ISO 9126]
+- **Test fonctionnel** : test basé sur une analyse des spécifications d’une fonctionnalité d’un composant ou système.
+#### Descriptif
+Les tests fonctionnels vérifient ce que l'application fait. Les tests fonctionnels peuvent être effectués à tous les niveaux de test.
+
+Les fonctions d'un système, sous-système ou composant peuvent être décrites dans les spécifications des exigences, des cas d'utilisation, fonctionnelle, ou non documentées.  
+Les tests fonctionnels considèrent le comportement externe des logiciels (tests de boîte noire).
+
+### Tester les caractéristiques non fonctionnelles d'un logiciel (Tests non fonctionnels)
+
+#### Définitions
+- **Exigence non-fonctionnelle** : une exigence qui ne se rapporte pas aux fonctionnalités, mais à des attributs tels que la fiabilité, le rendement, l'utilisabilité, la maintenabilité et la portabilité.
+- **Tests non-fonctionnels** : test des attributs d’un composant ou système qui ne sont pas liés aux fonctionnalités (p.ex. fiabilité, rendement, utilisabilité, maintenabilité et portabilité)
+
+#### Descriptif
+
+Les tests non-fonctionnels comprennent:
+
+- les tests de performance
+- les  tests de charge
+- les tests de stress
+- les tests d'utilisabilité
+- les tests de maintenabilité
+- les tests de fiabilité
+- les tests de portabilité
+- ...
+
+Les tests fonctionnels vérifient le "comment" l'application fonctionne.
+
+Les tests non-fonctionnels peuvent être effectués à tous les niveaux de test. Le terme non-fonctionnel décrit les tests requis pour mesurer les caractéristiques des systèmes et des logiciels qui peuvent être quantifiés sur une échelle, comme les temps de réponse pour les tests de performance. Ces tests peuvent se référer à un modèle de qualité. Les tests fonctionnels considèrent, dans la plupart des cas, le comportement externe des logiciels (tests de boîte noire).
+
+### Tester la structure/architecture d'un logiciel (Tests structurels)
+#### Définitions
+- **Test structurel**: tests basés sur une analyse de la structure interne du composant ou système
+
+### Descriptif
+
+Les tests structurels (boîte blanche) peuvent être effectués à tous les niveaux de test. Ces tests sont plus pertinents lorsqu'ils sont réalisés après la spécification technique, afin d'aider à mesurer la rigueur des tests grâce à l'évaluation de leur couverture. Les tests structurels doivent être basés sur l'architecture du système, comme une hiérarchie d'appels par exemple. 
+
+### Tester les changements (Tests de régression, re-tester)
+#### Définitions
+- Test de régression : tests d’un programme préalablement testé, après une modification, pour s’assurer que des défauts n’ont pas été introduits ou découverts dans des parties non modifiées du logiciel, comme suites des modifications effectuées. Ces tests sont effectués quand le logiciel ou son environnement est modifié.
+
+#### Descriptifs
+Après qu'un défaut soit détecté et corrigé, le logiciel doit être re-testé pour s'assurer que le défaut original a été supprimé avec succès. Cela s'appelle la confirmation. Le débogage est une activité de développement, et non une activité de test.
+Les tests de régression sont la répétition des tests d'un programme déjà testé, après une modification, afin de vérifier que des défauts n'ont pas été introduits à la suite du changement. Ces défauts peuvent être dans le logiciel testé, ou dans un autre composant logiciel connexes ou non. Ces tests sont effectués lorsque le logiciel,  ou son environnement,  est modifié.  L'étendue des tests de régression est fondée sur le risque de ne pas trouver des défauts sur un logiciel qui fonctionné correctement précédemment. Les tests doivent être reproductibles.Les tests de régression peuvent être réalisés à tous les niveaux de tests, et comprend les tests fonctionnels, non fonctionnels et structurels.
 
 ### Les catégories de tests
 

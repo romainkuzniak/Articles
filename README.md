@@ -17,5 +17,8 @@ Articles and presentations
 
 # Development
 
+# AI
+- [What We Learned from a Year of Building with LLMs](https://www.oreilly.com/radar/what-we-learned-from-a-year-of-building-with-llms-part-i/)
+
 
 

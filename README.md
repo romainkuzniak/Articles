@@ -5,7 +5,7 @@ Articles and presentations
 
 # leadership
 ## CTO
-- CTO Checklist (https://medium.com/@tom-neal/cto-checklist-1a2ef3d6502)
+- [CTO Checklist](https://medium.com/@tom-neal/cto-checklist-1a2ef3d6502)
 
 # Product
 

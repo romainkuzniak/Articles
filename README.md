@@ -8,8 +8,8 @@ Articles and presentations
 - [CTO Checklist](https://medium.com/@tom-neal/cto-checklist-1a2ef3d6502)
 
 # Product
-## 
-From Build:
+- [Thread on Patterns from Shreyas Doshi](https://x.com/shreyas/status/1399042778613485578)
+- From Build:
 ![IMG_1583 (1)](https://github.com/user-attachments/assets/f075f872-c58a-4ad5-bb2f-1bcb54b5735d)
 
 ## Marketing

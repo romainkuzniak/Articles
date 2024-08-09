@@ -3,6 +3,9 @@ Articles
 
 Articles and presentations
 
+# People Management
+- [Yaniro tool kit](https://yanirowiki.co/kit)
+
 # leadership
 ## CTO
 - [CTO Checklist](https://medium.com/@tom-neal/cto-checklist-1a2ef3d6502)
